@@ -86,7 +86,7 @@ header {
     display: block;
     width: 12px;
     height: 12px;
-    background: url(img/arrow.svg) 100%/contain no-repeat;
+    background: url(../img/arrow.svg) 100%/contain no-repeat;
     margin-left: 10px;
 }
 
