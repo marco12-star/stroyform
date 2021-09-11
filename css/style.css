@@ -99,7 +99,7 @@ header {
     background: #9fb8ff;
     min-width: 150px;
     transition: .3s ease;
-    top: 35px;
+    top: 40px;
 }
 
 .haschild:hover .submenu {
