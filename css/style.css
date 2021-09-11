@@ -23,6 +23,7 @@ header {
     width: 100%;
     background: #fff;
     padding: 5px 0;
+    z-index: 1;
 }
 
 .logo img {
@@ -547,7 +548,7 @@ form.add__form {
     header .menu {
         display: block;
     }
-
+ 
     header .mobilemenu {
         position: absolute;
         top: 48px;
