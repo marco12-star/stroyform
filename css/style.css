@@ -233,10 +233,6 @@ footer .blue_link img {
     transition: .2s ease-out;
 }
 
-.blog__item:hover {
-    transform: scale(1.05);
-}
-
 .blog h2 {
     font-weight: 600;
     font-size: 24px;
@@ -486,6 +482,12 @@ form.add__form {
 }
 
 /* Media */
+
+@media all and (max-width: 992px) {
+    .blog__item:hover {
+        transform: scale(1.02);
+    }
+}
 
 @media all and (max-width: 992px) {
     footer .container {
