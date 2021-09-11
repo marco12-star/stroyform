@@ -318,6 +318,7 @@ p.blog__time {
     margin-top: 30px;
 }
 
+
 .article {
     max-width: 720px;
 }
@@ -327,6 +328,10 @@ p.blog__time {
     font-size: 24px;
     line-height: 29px;
     text-decoration-line: underline;
+}
+
+.article img {
+    width: 100%;
 }
 
 aside.related {
@@ -603,6 +608,17 @@ form.add__form {
     .submenu li a {
         padding: 0;
         padding-left: 10px;
+    }
+
+    .article__wrap {
+        flex-direction: column;
+    }
+    aside.related {
+        margin-top: 32px;
+        padding-left: 0;
+        max-width:unset;
+        border-top: 1px solid #000;
+        border-left: none;
     }
 }
 
