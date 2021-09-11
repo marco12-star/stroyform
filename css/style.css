@@ -25,20 +25,6 @@ header {
     padding: 5px 0;
 }
 
-.menu__overlay {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgb(255 255 255 / 50%);
-    display: none;
-}
-
-.show__menu .menu__overlay {
-    display: block;
-}
-
 .logo img {
     width: 57px;
     height: 34px;
@@ -505,6 +491,7 @@ form.add__form {
     footer .container {
         flex-wrap: wrap;
     }
+    
 }
 
 @media all and (max-width: 767px) {
@@ -539,6 +526,20 @@ form.add__form {
     html.show__menu .bar span:nth-last-child(2) {
         transform: rotate(-45deg) translate(0, -1px);
         margin: 0;
+    }
+
+    .menu__overlay {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgb(255 255 255 / 50%);
+        display: none;
+    }
+    
+    .show__menu .menu__overlay {
+        display: block;
     }
 
     header .menu {
