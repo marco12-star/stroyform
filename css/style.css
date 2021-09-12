@@ -493,6 +493,10 @@ form.add__form {
     margin: 5px 0;
 }
 
+.menu__overlay {
+    display: none;
+}
+
 /* Media */
 
 @media all and (max-width: 992px) {
