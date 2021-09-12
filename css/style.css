@@ -499,7 +499,7 @@ form.add__form {
 
 /* Media */
 
-@media all and (max-width: 992px) {
+@media all and (min-width: 767px) {
     .blog__item:hover {
         transform: scale(1.02);
     }
