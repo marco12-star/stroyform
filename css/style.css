@@ -437,7 +437,7 @@ select:focus {
     max-width: 365px;
 }
 
-.add button {
+.btn {
     background: #5D85EF;
     border: unset;
     max-width: 281px;
