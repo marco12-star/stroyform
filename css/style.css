@@ -89,7 +89,7 @@ header .container {
     visibility: hidden;
     background: #9fb8ff;
     min-width: 150px;
-    transition: .3s ease;
+    transition: .15s ease;
     top: 40px;
 }
 
