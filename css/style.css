@@ -501,6 +501,30 @@ form.add__form {
     display: none;
 }
 
+.edition h1,
+.edition h2 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.edition h2 {
+    margin-top: 60px;
+}
+
+.bluebox {
+    border: 1px solid #5D85EF;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 25px;
+}
+
+.bluebox li {
+    margin-bottom: 15px;
+}
+
+
 /* Media */
 
 @media all and (min-width: 767px) {
@@ -513,7 +537,7 @@ form.add__form {
     footer .container {
         flex-wrap: wrap;
     }
-    
+
 }
 
 @media all and (max-width: 767px) {
@@ -544,7 +568,7 @@ form.add__form {
         opacity: 0;
         transform: rotate(0deg) scale(0.2, 0.2);
     }
-    
+
     html.show__menu .bar span:nth-last-child(2) {
         transform: rotate(-45deg) translate(0, -1px);
         margin: 0;
@@ -559,7 +583,7 @@ form.add__form {
         background: rgb(255 255 255 / 50%);
         display: none;
     }
-    
+
     .show__menu .menu__overlay {
         display: block;
     }
@@ -567,7 +591,7 @@ form.add__form {
     header .menu {
         display: block;
     }
- 
+
     header .mobilemenu {
         position: absolute;
         top: 48px;
@@ -585,11 +609,12 @@ form.add__form {
     html.show__menu .mobilemenu {
         transform: translateX(0);
     }
+
     html.show__menu body {
         overflow: hidden;
     }
-    html.show__menu .bar {
-    }
+
+    html.show__menu .bar {}
 
     header .mobilemenu a {
         display: block;
@@ -627,10 +652,11 @@ form.add__form {
     .article__wrap {
         flex-direction: column;
     }
+
     aside.related {
         margin-top: 32px;
         padding-left: 0;
-        max-width:unset;
+        max-width: unset;
         border-top: 1px solid #000;
         border-left: none;
     }
