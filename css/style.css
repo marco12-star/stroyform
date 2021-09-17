@@ -177,6 +177,10 @@ ul.parts li a:hover {
     color: #5D85EF;
 }
 
+a.blue_link:hover {
+    text-decoration: none;
+}
+
 /* Content */
 
 /* Footer */
