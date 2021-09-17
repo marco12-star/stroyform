@@ -524,6 +524,22 @@ form.add__form {
     margin-bottom: 15px;
 }
 
+.link__wrap {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.link__wrap .btn {
+    margin-right: 50px;
+    margin-bottom: 15px;
+}
+
+.link__wrap a {
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
 
 /* Media */
 
@@ -541,6 +557,12 @@ form.add__form {
 }
 
 @media all and (max-width: 767px) {
+
+
+    .bluebox ul {
+        padding-left: 10px;
+    }
+
     .content {
         flex-direction: column;
         justify-content: center;
@@ -659,6 +681,13 @@ form.add__form {
         max-width: unset;
         border-top: 1px solid #000;
         border-left: none;
+    }
+}
+
+@media all and (max-width: 567px) {
+    footer .container {
+        justify-content: center;
+        flex-direction: column;
     }
 }
 
