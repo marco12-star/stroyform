@@ -195,6 +195,10 @@ ul.parts li {
     margin-bottom: 15px;
 }
 
+ul.parts li:last-child {
+    border-bottom: none;
+}
+
 ul.parts li a {
     color: #000;
     text-decoration: none;
