@@ -183,14 +183,14 @@ h2 {
 }
 
 ul.parts {
-    border: 1px solid #5D85EF;
+    /* border: 1px solid #5D85EF; */
     padding: 20px;
     padding-left: 40px;
     margin: 0;
 }
 
 ul.parts li {
-    border-bottom: 1px solid #5D85EF;
+    /* border-bottom: 1px solid #5D85EF; */
     padding-bottom: 15px;
     margin-bottom: 15px;
 }
