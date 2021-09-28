@@ -19,29 +19,29 @@ let bar = $('#bar')
 let html = $('html')
 let overlayMenu = $('.overlay__menu')
 
-bar.on('click', function() {
+bar.on('click', function () {
     html.toggleClass('show__menu')
 })
 
-$(document).ready(function() {
-    $('button').click(function(e) {
-  
-      var btn = $(this);
-  
-      $.ajax({
-        method: "POST",
-        url: "https://jsonplaceholder.typicode.com/posts",
-        dataType: "json",
-        data: {
-          "name": btn.val(),
-          'input': $('input').val()
-        },
-        success: function(data) {
-          console.log(data);
-        },
-        error: function(er) {
-          console.log(er);
+function loadingAjax(div_id, user, date1, date2) {
+    $("#" + div_id).html('<br><center><img src="images/loading.gif"><br><br><font color="#006699" face="arial" size="4"><b>Loading data<br>VPlease wait ...</b></font></center>');
+    $.ajax({
+        type: "POST",
+        url: "activities.php?USER=" + user + "&DATE1=" + date1 + "&DATE2=" + date2,
+        success: function (msg) {
+            $("#" + div_id).html(msg);
         }
-      });
-    })
-  });
+    });
+}
+
+/* this.years = function (startYear) {
+    var currentYear = new Date().getFullYear(),
+        years = [];
+    startYear = startYear || 1980;
+    while (startYear <= currentYear) {
+        years.push(startYear++);
+    }
+    return years;
+}
+
+console.log(this.years(2015)); */
