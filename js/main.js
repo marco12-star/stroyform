@@ -23,25 +23,34 @@ bar.on('click', function () {
     html.toggleClass('show__menu')
 })
 
-function loadingAjax(div_id, user, date1, date2) {
-    $("#" + div_id).html('<br><center><img src="images/loading.gif"><br><br><font color="#006699" face="arial" size="4"><b>Loading data<br>VPlease wait ...</b></font></center>');
-    $.ajax({
-        type: "POST",
-        url: "activities.php?USER=" + user + "&DATE1=" + date1 + "&DATE2=" + date2,
-        success: function (msg) {
-            $("#" + div_id).html(msg);
-        }
-    });
-}
-
 /* this.years = function (startYear) {
     var currentYear = new Date().getFullYear(),
         years = [];
     startYear = startYear || 1980;
+    const yearSelect = document.getElementById('yearSelect')
     while (startYear <= currentYear) {
         years.push(startYear++);
+        var option = document.createElement("option")
+        option.value = years
+        option.text = years
+        yearSelect.add(option, null);
     }
     return years;
 }
 
 console.log(this.years(2015)); */
+
+function Years() {
+    var today = new Date();
+    var yyyy = today.getFullYear();
+    var startYear = 2016
+    var yearDif = yyyy - startYear
+    var content = '<option value="2015">2015</option>';
+
+    for (var x = 0; x <= yearDif; x++, startYear++) {
+        content += '<option value="' + x + '">' + startYear + '</option>';
+    }
+    $('#yearSelect').append(content);
+}
+
+Years()

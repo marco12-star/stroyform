@@ -514,6 +514,11 @@ form.add__form {
     padding: 35px 30px;
 }
 
+.addform {
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
 .article__wrap {
     margin-bottom: 50px;
 }
