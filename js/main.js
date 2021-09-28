@@ -22,3 +22,26 @@ let overlayMenu = $('.overlay__menu')
 bar.on('click', function() {
     html.toggleClass('show__menu')
 })
+
+$(document).ready(function() {
+    $('button').click(function(e) {
+  
+      var btn = $(this);
+  
+      $.ajax({
+        method: "POST",
+        url: "https://jsonplaceholder.typicode.com/posts",
+        dataType: "json",
+        data: {
+          "name": btn.val(),
+          'input': $('input').val()
+        },
+        success: function(data) {
+          console.log(data);
+        },
+        error: function(er) {
+          console.log(er);
+        }
+      });
+    })
+  });
