@@ -58,7 +58,12 @@ $(document).ready(function () {
             type: $(this).attr('method'),
             url: $(this).attr('action'),
             success: function (response) {
-                /* something here */
+                this.reset();
+                console.log('cool')
+            },
+            fail: function (response) {
+                this.reset();
+                console.log('not cool')
             }
         });
         return false;
