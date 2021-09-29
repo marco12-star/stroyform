@@ -40,17 +40,27 @@ bar.on('click', function () {
 
 console.log(this.years(2015)); */
 
-function Years() {
-    var today = new Date();
-    var yyyy = today.getFullYear();
-    var startYear = 2016
-    var yearDif = yyyy - startYear
-    var content = '<option value="2015">2015</option>';
+var today = new Date();
+var yyyy = today.getFullYear();
+var startYear = 2016
+var yearDif = yyyy - startYear
+var content = '<option value="2015">2015</option>';
 
-    for (var x = 0; x <= yearDif; x++, startYear++) {
-        content += '<option value="' + x + '">' + startYear + '</option>';
-    }
-    $('#yearSelect').append(content);
+for (var x = 0; x <= yearDif; x++, startYear++) {
+    content += '<option value="' + x + '">' + startYear + '</option>';
 }
+$('#yearSelect').append(content);
 
-Years()
+$(document).ready(function () {
+    $('#addForm').submit(function () {
+        $.ajax({
+            data: $(this).serialize(),
+            type: $(this).attr('method'),
+            url: $(this).attr('action'),
+            success: function (response) {
+                /* something here */
+            }
+        });
+        return false;
+    });
+});
