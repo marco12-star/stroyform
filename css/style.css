@@ -929,6 +929,14 @@ form.add__form {
 }
 
 @media all and (max-width: 992px) {
+    .menu li {
+        margin-right: 10px;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+
     .database .input__wrap {
         grid-template-columns: 20% 80%;
     }
