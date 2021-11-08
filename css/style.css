@@ -133,7 +133,7 @@ h1 {
     font-size: 24px;
     line-height: 28px;
     margin-top: 60px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 h3 {
@@ -165,7 +165,14 @@ p {
     align-items: flex-start;
 }
 
-.content img,
+.home .content {
+    margin-bottom: 100px;
+}
+
+.content img {
+    max-width: 355px;
+    margin-right: 60px;
+}
 .add__article img {
     max-width: 240px;
     margin-right: 50px;
@@ -175,16 +182,6 @@ h2 {
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
-}
-
-.content {
-    display: flex;
-}
-
-.content img,
-.add__article img {
-    max-width: 240px;
-    margin-right: 50px;
 }
 
 ul.parts {
@@ -1046,6 +1043,7 @@ form.add__form {
     .add__article img {
         margin: 0 auto;
         margin-bottom: 20px;
+        max-width: 100%;
     }
 
     .navbar {
