@@ -173,6 +173,7 @@ p {
     max-width: 355px;
     margin-right: 60px;
 }
+
 .add__article img {
     max-width: 240px;
     margin-right: 50px;
@@ -912,6 +913,26 @@ form.add__form {
 
 /* Database */
 
+/* patents */
+
+.patents .container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 90px;
+}
+
+.patent__item a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.patent__item img {
+    width: 100%;
+}
+
+/* patents */
+
 /* Media */
 
 @media all and (min-width: 767px) {
@@ -937,6 +958,11 @@ form.add__form {
 }
 
 @media all and (max-width: 992px) {
+
+    .patent__item:first-child {
+        margin-right: 15px;
+    }
+
     .menu li {
         margin-right: 10px;
     }
@@ -1163,6 +1189,16 @@ form.add__form {
 }
 
 @media all and (max-width: 567px) {
+    .patents .container {
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    .patent__item:first-child {
+        margin-right: 0;
+        margin-bottom: 60px;
+    }
+
     .quantity {
         justify-content: space-between;
     }
