@@ -976,7 +976,7 @@ form.add__form {
 /* Comparing regions */
 
 .regions_page {
-    padding: 110px 15px;
+    padding: 40px 15px;
 }
 
 .regions_table {
@@ -1103,6 +1103,18 @@ form.add__form {
 }
 
 @media all and (max-width: 767px) {
+
+    .regions_page {
+        overflow-y: scroll;
+    }
+
+    .regions_table {
+        white-space: nowrap;
+    }
+    
+    .regions_table td, .regions_table th {
+        width: 40%;
+    }
 
     .swiper.mySwiper {
         height: 140px;
