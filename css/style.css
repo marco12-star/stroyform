@@ -973,6 +973,38 @@ form.add__form {
 
 /* Comparing catalogs */
 
+/* Comparing regions */
+
+.regions_page {
+    padding: 110px 15px;
+}
+
+.regions_table {
+    width: 100%;
+    text-align: left;
+    border: 1px solid #5D85EF;
+    border-collapse: collapse;
+}
+
+.regions_table th {
+    padding: 20px;
+    color: #5D85EF;
+    width: 25%;
+}
+
+.regions_table td {
+    padding: 10px 20px;
+    width: 25%;
+}
+
+.regions_table tr {
+    border-bottom: 1px solid #5D85EF;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Comparing regions */
+
 /* Media */
 
 @media all and (min-width: 767px) {
